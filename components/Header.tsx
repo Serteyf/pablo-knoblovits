@@ -63,7 +63,7 @@ export default function Header() {
               P.K.
             </Text>
           </Box>
-          <Stack
+          {/* <Stack
             flex={{ base: 1, md: 0 }}
             justify={"flex-end"}
             alignItems={"center"}
@@ -109,7 +109,7 @@ export default function Header() {
                 Contacto
               </Box>
             </Button>
-          </Stack>
+          </Stack> */}
         </Flex>
       </Flex>
 
