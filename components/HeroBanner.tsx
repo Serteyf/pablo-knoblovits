@@ -20,7 +20,7 @@ export default function HeroBanner() {
       <Box
         mb="2rem"
         pr="3rem"
-        backgroundImage={{ base: "none", md: "/BGH1y2.svg" }}
+        backgroundImage={{ base: "none", md: "/BGH1Y2.svg" }}
         backgroundPosition="left"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
@@ -48,7 +48,7 @@ export default function HeroBanner() {
         </Heading>
       </Box>
 
-      <Button
+      {/* <Button
         ml="10rem"
         height="fit-content"
         w="fit-content"
@@ -68,7 +68,7 @@ export default function HeroBanner() {
         >
           Contacto
         </Box>
-      </Button>
+      </Button> */}
     </Container>
   );
 }
