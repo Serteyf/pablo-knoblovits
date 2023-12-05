@@ -21,8 +21,9 @@ export default function Footer() {
   return (
     <Box p={{ base: 5, md: 8 }} w="90%" m="0 auto">
       <Stack
+        w="100%"
         spacing={{ base: 8, md: 0 }}
-        justifyContent="space-between"
+        justifyContent="center"
         direction={{ base: "column", md: "row" }}
       >
         <Box maxW="30%">
@@ -32,7 +33,7 @@ export default function Footer() {
               fontFamily={theme.fonts.logo}
               color="brand.blue.base"
               fontWeight="bold"
-              paddingInlineStart="1rem"
+              textAlign="center"
             >
               P.K.
             </Text>
@@ -94,7 +95,12 @@ export default function Footer() {
             Muhammad Ahmad
           </Link>
         </Text>
-        <Stack spacing={2} direction={{ base: "column", md: "row" }}>
+        <Stack
+          spacing={2}
+          direction={{ base: "column", md: "row" }}
+          width="100%"
+          justifyContent="center"
+        >
           {/* <Button as={Link} href="#" rounded="md" colorScheme="gray">
             Social media
           </Button>
@@ -121,7 +127,7 @@ export default function Footer() {
 
 const CustomLink = ({ children, ...props }: LinkProps) => {
   return (
-    <Link href="#" fontSize="sm" _hover={{ textDecoration: "underline" }} {...props}>
+    <Link href="#" fontSize="sm" {...props}>
       {children}
     </Link>
   );

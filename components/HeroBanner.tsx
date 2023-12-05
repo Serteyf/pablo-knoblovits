@@ -16,6 +16,9 @@ export default function HeroBanner() {
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       paddingInlineStart="0"
+      boxShadow={
+        "inset 0px -1rem 1rem 0px rgba(0, 0, 0, 0.14), inset 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.14)"
+      }
     >
       <Box
         mb="2rem"

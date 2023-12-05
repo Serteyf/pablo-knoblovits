@@ -1,13 +1,28 @@
 "use client";
 
 // import { Link } from "@chakra-ui/next-js";
-import { Box, Button, Container, HStack, Heading, Icon, VStack, Link } from "@chakra-ui/react";
-import ContactIcon from "./utils/ContactIcon";
+import {
+  Box,
+  Button,
+  Container,
+  HStack,
+  Heading,
+  Icon,
+  VStack,
+  Link,
+  Flex,
+} from "@chakra-ui/react";
+// import ContactIcon from "./utils/ContactIcon";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
+// import Number from "@/components/utils/Number";
 
 export default function ContactBlock() {
   return (
-    <Box backgroundColor="bg.gray" w="100%">
+    <Box
+      backgroundColor="bg.gray"
+      w="100%"
+      boxShadow={"inset 0px -0.5rem 1rem 0px rgba(0, 0, 0, 0.14)"}
+    >
       <VStack maxW="90%" margin="0 auto" p="1rem 0 3.5rem 0">
         <Box w="100%">
           <Box
@@ -29,26 +44,20 @@ export default function ContactBlock() {
         </Box>
         <HStack justifyContent={"space-around"} w="80%">
           <VStack>
-            <Box>
-              <PhoneIcon fontSize="lg" mr="1rem" />
-              <Link size="lg" href="tel:+ 5491112345678">
-                + 54 9 11 1234 5678
+            <Flex>
+              <PhoneIcon fontSize="lg" mr="1rem" alignSelf={"center"} />
+              <Link size="lg" href="tel:+5491125568102">
+                (+54) 9 11 2556 8102
               </Link>
-            </Box>
+            </Flex>
           </VStack>
           <VStack>
-            <Box>
-              <EmailIcon fontSize="lg" mr="1rem" />
-              <Link size="lg" href="mailto:pabloknoblovits@gmail.com">
-                pabloknoblovits@gmail.com
+            <Flex>
+              <EmailIcon fontSize="lg" mr="1rem" alignSelf="center" />
+              <Link size="lg" href="mailto:enymet@gmail.com">
+                enymet@gmail.com
               </Link>
-            </Box>
-            <Box>
-              <EmailIcon fontSize="lg" mr="1rem" />
-              <Link size="lg" href="mailto:pk@hospitalitaliano.com.ar">
-                pk@hospitalitaliano.com.ar
-              </Link>
-            </Box>
+            </Flex>
             {/* <Button>Sobre mí</Button>
           <Button>Hacer una consulta</Button> */}
           </VStack>
