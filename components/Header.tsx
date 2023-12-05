@@ -29,8 +29,6 @@ export default function Header() {
       <Flex
         minH={"60px"}
         h="120px"
-        // maxW={"90%"}
-        // m="0 auto"
         color="gray.600"
         borderBottom={1}
         borderStyle={"solid"}
@@ -38,6 +36,8 @@ export default function Header() {
         align={"center"}
         boxShadow={"1"}
         m="0 1.5rem"
+        maxW="90%"
+        margin="0 auto"
       >
         <Flex
           flex={{ base: 1, md: "auto" }}

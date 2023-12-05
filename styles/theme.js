@@ -3,6 +3,7 @@ import "@fontsource/whisper";
 import "@fontsource/raleway";
 import "@fontsource/roboto";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import LinkTheme from "./components/Link";
 // import ButtonTheme from "@theme/components/ButtonTheme";
 
 const customTheme = extendTheme({
@@ -14,8 +15,7 @@ const customTheme = extendTheme({
         backgroundColor: "white",
         color: "black",
         margin: "auto!important",
-        maxWidth: "90%",
-        // fontFamily: `Raleway, ${chakraTheme.fonts?.body}`,
+        maxWidth: "100%",
       },
       main: { flex: "1 0 auto" },
     },
@@ -78,6 +78,9 @@ const customTheme = extendTheme({
     lg: "2rem",
     xl: "3rem",
     xxl: "4rem",
+  },
+  components: {
+    Link: LinkTheme,
   },
 });
 

@@ -28,7 +28,7 @@ export default function HeroBanner() {
       >
         <Heading
           as="h1"
-          pl="8rem"
+          pl="5rem"
           fontSize="xxl"
           width="100%"
           color="bg.blue"
@@ -36,7 +36,14 @@ export default function HeroBanner() {
         >
           Pablo Knoblovits
         </Heading>
-        <Heading as="h2" ml="14rem" fontSize="md" fontWeight="none" width="100%" color="text.white">
+        <Heading
+          as="h2"
+          ml="11.5rem"
+          fontSize="md"
+          fontWeight="none"
+          width="100%"
+          color="text.white"
+        >
           Médico andrólogo endocrinólogo
         </Heading>
       </Box>
