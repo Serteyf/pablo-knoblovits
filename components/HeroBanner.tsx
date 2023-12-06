@@ -47,7 +47,7 @@ export default function HeroBanner() {
           width="100%"
           color="text.white"
         >
-          Médico andrólogo endocrinólogo
+          Médico Endocrinólogo - Andrólogo
         </Heading>
       </Box>
 

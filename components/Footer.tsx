@@ -38,7 +38,7 @@ export default function Footer() {
               P.K.
             </Text>
           </Link>
-          <Text mt={2}>Médico andrólogo endocrinólogo</Text>
+          <Text mt={2}>Médico Endocrinólogo - Andrólogo</Text>
         </Box>
         {/* <HStack
           spacing={4}

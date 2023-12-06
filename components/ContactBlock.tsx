@@ -38,7 +38,7 @@ export default function ContactBlock() {
               color="text.white"
               fontWeight="normal"
             >
-              Comunicate conmigo
+              Vías de comunicación
             </Heading>
           </Box>
         </Box>
