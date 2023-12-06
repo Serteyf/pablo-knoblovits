@@ -41,7 +41,7 @@ export default function HeroBanner() {
         </Heading>
         <Heading
           as="h2"
-          ml="11.5rem"
+          ml="10.5rem"
           fontSize="md"
           fontWeight="none"
           width="100%"
