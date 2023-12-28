@@ -4,7 +4,17 @@ import "@fontsource/raleway";
 import "@fontsource/roboto";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import LinkTheme from "./components/Link";
+import FormLabelTheme from "./components/FormLabel";
 // import ButtonTheme from "@theme/components/ButtonTheme";
+
+function goldenRatio (){
+  return {
+    md:1*1.618033988749,
+    lg:(1*1.618033988749)*1.618033988749,
+    xl:((1*1.618033988749)*1.618033988749)*1.618033988749,
+    xxl:(((1*1.618033988749)*1.618033988749)*1.618033988749)*1.618033988749
+  }
+ }
 
 const customTheme = extendTheme({
   styles: {
@@ -74,13 +84,14 @@ const customTheme = extendTheme({
   fontSizes: {
     // xs: "12px",
     sm: "1rem",
-    md: "1.5rem",
-    lg: "2rem",
-    xl: "3rem",
-    xxl: "4rem",
+    md: `${goldenRatio().md}rem`,
+    lg: `${goldenRatio().lg}rem`,
+    xl: `${goldenRatio().xl}rem`,
+    xxl: `${goldenRatio().xxl}rem`,
   },
   components: {
     Link: LinkTheme,
+    FormLabel: FormLabelTheme
   },
 });
 

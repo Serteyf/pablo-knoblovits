@@ -7,6 +7,7 @@ import {
   Container,
   HStack,
   Heading,
+  Text,
   Icon,
   VStack,
   Link,
@@ -16,14 +17,14 @@ import {
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 // import Number from "@/components/utils/Number";
 
-export default function ContactBlock() {
+export default function Bio() {
   return (
     <Box
-      backgroundColor="bg.gray"
+      backgroundColor="brand.white.base"
       w="100%"
       boxShadow={"inset 0px -0.5rem 1rem 0px rgba(0, 0, 0, 0.14)"}
     >
-      <VStack maxW="80%" margin="0 auto" p="1rem 0 3.5rem 0">
+      <VStack maxW="90%" margin="0 auto" p="1rem 0 3.5rem 0">
         <Box w="100%">
           <Box
             backgroundImage={{ base: "none", md: "/labelContacto.svg" }}
@@ -37,27 +38,19 @@ export default function ContactBlock() {
               textAlign="start"
               color="text.white"
               fontWeight="normal"
-              fontSize="lg"
             >
-              Vías de comunicación
+              Bío
             </Heading>
           </Box>
         </Box>
-        <HStack justifyContent={"space-around"} w="80%">
-            <Flex>
-              <PhoneIcon fontSize="lg" mr="1rem" alignSelf={"center"} />
-              <Link size="lg" href="tel:+5491125568102">
-                (+54) 9 11 2556 8102
-              </Link>
-            </Flex>
-            <Flex>
-              <EmailIcon fontSize="lg" mr="1rem" alignSelf="center" />
-              <Link size="lg" href="mailto:enymet@gmail.com">
-                enymet@gmail.com
-              </Link>
-            </Flex>
-            {/* <Button>Sobre mí</Button>
-          <Button>Hacer una consulta</Button> */}
+        <HStack>
+          <VStack>
+            <Box>
+            <Text>Lorem ipsum</Text>
+            </Box>
+            <Button>Sobre mí</Button>
+          </VStack>
+            <Box></Box>
         </HStack>
       </VStack>
     </Box>
