@@ -2,7 +2,7 @@
 
 import { Providers } from "./providers";
 
-import Header from "@/components/Header";
+import Header from "@/components/Layout/Header";
 import HeroBanner from "@/components/HeroBanner";
 import { useTheme } from "@chakra-ui/react";
 

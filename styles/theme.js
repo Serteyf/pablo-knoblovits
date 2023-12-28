@@ -4,7 +4,7 @@ import "@fontsource/raleway";
 import "@fontsource/roboto";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import LinkTheme from "./components/Link";
-// import ButtonTheme from "@theme/components/ButtonTheme";
+import HeadingTheme from "./components/Heading";
 
 const customTheme = extendTheme({
   styles: {
@@ -81,6 +81,7 @@ const customTheme = extendTheme({
   },
   components: {
     Link: LinkTheme,
+    Heading: HeadingTheme,
   },
 });
 

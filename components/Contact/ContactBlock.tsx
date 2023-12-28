@@ -31,13 +31,7 @@ export default function ContactBlock() {
             backgroundRepeat="no-repeat"
             width="fit-content"
           >
-            <Heading
-              as="h2"
-              p="2.5rem 2.5rem 2.5rem 5rem"
-              textAlign="start"
-              color="text.white"
-              fontWeight="normal"
-            >
+            <Heading as="h2" p="2.5rem 2.5rem 2.5rem 5rem" textAlign="start" color="text.white">
               Vías de comunicación
             </Heading>
           </Box>
