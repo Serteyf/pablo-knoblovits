@@ -17,7 +17,6 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/next-js";
 import { useTheme } from "@chakra-ui/react";
 
 export default function Header() {
@@ -36,7 +35,7 @@ export default function Header() {
         align={"center"}
         boxShadow={"1"}
         m="0 1.5rem"
-        maxW="90%"
+        maxW="80%"
         margin="0 auto"
       >
         <Flex
