@@ -1,0 +1,33 @@
+/* .floating-label {
+  position: relative;
+}
+
+.floating-label label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+
+  font-size: 16px;
+  opacity: 0.6;
+
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.floating-label.is-floating label {
+  top: 5px;
+
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.floating-label.has-focus label {
+  color: royalblue;
+  opacity: 1 !important;
+}
+
+.floating-label input {
+  padding: 20px 10px 4px 12px;
+  width: 250px;
+} */

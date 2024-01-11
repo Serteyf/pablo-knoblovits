@@ -6,6 +6,7 @@ import Awards from "@/components/Awards/Awards";
 import AboutMe from "@/components/AboutMe";
 import ContactBlock from "@/components/Contact/ContactBlock";
 import ImagesCarousel from "@/components/ImagesCarousel";
+import FieldOfWork from "@/components/FieldOfWork";
 
 const Index: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Index: NextPage = () => {
       <HeroBanner />
       <ContactBlock />
       <AboutMe />
+      <FieldOfWork />
       <Awards />
       <ContactForm />
       {/* <ImagesCarousel /> */}

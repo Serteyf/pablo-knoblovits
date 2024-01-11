@@ -19,6 +19,10 @@ function goldenRatio() {
   };
 }
 
+const activeLabelStyles = {
+  transform: "scale(0.85) translateY(-24px)",
+};
+
 const customTheme = extendTheme({
   styles: {
     global: {
@@ -40,11 +44,12 @@ const customTheme = extendTheme({
   // breakpoints[2] = 768px - 1024px(lg)
 
   breakpoints: {
-    sm: "640px",
-    md: "768px",
-    lg: "1024px",
-    xl: "1280px",
-    "2xl": "1440px",
+    base: "0em", // 0px
+    sm: "30em", // ~480px. em is a relative unit and is dependant on the font-size.
+    md: "48em", // ~768px
+    lg: "62em", // ~992px
+    xl: "80em", // ~1280px
+    "2xl": "96em", // ~1536px
   },
   fonts: {
     body: `Raleway, ${chakraTheme.fonts?.body}`,
@@ -66,10 +71,8 @@ const customTheme = extendTheme({
         bold: "#25305E",
         light: "#6B7EFF",
       },
-      white: {
-        base: "#FFFFFF",
-        bold: "#D7D9DB",
-      },
+      white: "#FFFFFF",
+
       black: {
         icons: "0E0E0E",
       },
@@ -99,6 +102,40 @@ const customTheme = extendTheme({
       // 1. We can update the base styles
       baseStyle: {
         color: "white",
+      },
+    },
+    Form: {
+      variants: {
+        floating: {
+          container: {
+            _focusWithin: {
+              label: {
+                ...activeLabelStyles,
+              },
+            },
+            "input:not(:placeholder-shown) + label, .chakra-select__wrapper + label, textarea:not(:placeholder-shown) ~ label":
+              {
+                ...activeLabelStyles,
+              },
+            label: {
+              top: 0,
+              left: 0,
+              zIndex: 2,
+              position: "absolute",
+              backgroundColor: "white",
+              pointerEvents: "none",
+              mx: 3,
+              px: 1,
+              my: 2,
+              transformOrigin: "left top",
+              fontSize: "sm",
+            },
+            input: {
+              borderColor: "#000",
+              fontSize: "sm",
+            },
+          },
+        },
       },
     },
   },
