@@ -6,12 +6,6 @@ const HeadingTheme: ComponentStyleConfig = defineStyleConfig({
     // fontSize="2rem"
     fontWeight: "normal",
   },
-  sizes: {
-    sm: { fontSize: "1rem" },
-    md: { fontSize: "1.5rem" },
-    lg: { fontSize: "2rem" },
-  },
-
   defaultProps: {
     // size: "sm",
   },

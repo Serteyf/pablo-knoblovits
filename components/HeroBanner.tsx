@@ -3,12 +3,7 @@
 import { Container, Heading, Image, Box, Button, Flex } from "@chakra-ui/react";
 import styles from "./HeroBanner.module.scss";
 
-
-
 export default function HeroBanner() {
-  
-
-  
   return (
     <Container
       display="flex"
@@ -47,7 +42,7 @@ export default function HeroBanner() {
         <Heading
           as="h2"
           ml="10.5rem"
-          fontSize='md'
+          fontSize="md"
           fontWeight="none"
           width="100%"
           color="text.white"

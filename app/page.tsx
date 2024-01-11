@@ -1,18 +1,21 @@
 import HeroBanner from "@/components/HeroBanner";
 import Layout from "@/components/Layout/Layout";
 import { NextPage } from "next";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/Contact/ContactForm";
 import Awards from "@/components/Awards/Awards";
 import AboutMe from "@/components/AboutMe";
 import ContactBlock from "@/components/Contact/ContactBlock";
+import ImagesCarousel from "@/components/ImagesCarousel";
 
 const Index: NextPage = () => {
   return (
     <Layout pageTitle={"Home"}>
       <HeroBanner />
-      <AboutMe />
       <ContactBlock />
+      <AboutMe />
       <Awards />
+      <ContactForm />
+      {/* <ImagesCarousel /> */}
     </Layout>
   );
 };

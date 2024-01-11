@@ -62,7 +62,7 @@ export default function Header() {
               P.K.
             </Text>
           </Box>
-          {/* <Stack
+          <Stack
             flex={{ base: 1, md: 0 }}
             justify={"flex-end"}
             alignItems={"center"}
@@ -97,6 +97,7 @@ export default function Header() {
               padding="1.5rem 1.5rem"
               _hover={{ bg: "bg.blue" }}
               className="button"
+              fontWeight="normal"
             >
               <Box
                 sx={{
@@ -108,7 +109,7 @@ export default function Header() {
                 Contacto
               </Box>
             </Button>
-          </Stack> */}
+          </Stack>
         </Flex>
       </Flex>
 

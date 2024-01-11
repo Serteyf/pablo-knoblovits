@@ -24,21 +24,29 @@ export default function AwardsCard(props: any) {
       maxW="20%"
       h="100%"
     >
-      <Box bgColor="bg.gray" p="0.5rem" borderRadius="10px 10px 10px 10px">
+      <Box
+        p="0.5rem"
+        borderRadius="10px 10px 10px 10px"
+        width={props.award.width}
+        textAlign="center"
+      >
         <Image alt={`${props.award.title} logo`} src={props.award.logo} />
       </Box>
       <VStack
         maxH="50%"
         spacing="4"
         textAlign={"center"}
-        bgColor="bg.gray"
         p="0.5rem"
         borderRadius="10px 10px 10px 10px"
       >
-        <Heading as="h2" fontSize={"md"}>
-          {props.award.title}
-        </Heading>
-        <Text fontSize={"sm"}>{props.award.description}</Text>
+        <Box>
+          <Heading as="h2" fontSize="sm" height="150px">
+            {props.award.title}
+          </Heading>
+        </Box>
+        <Text fontSize={"sm"} textAlign="start">
+          {props.award.description}
+        </Text>
       </VStack>
     </VStack>
   );

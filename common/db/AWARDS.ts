@@ -1,28 +1,38 @@
 const AWARDS = [
   {
     id: 1,
-    logo: "logoipsum-330.svg",
-    title: "de Finibus Bonorum et Malorum",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+    logo: "logoSAA.png",
+    title: "Mejor Trabajo de Anrología Clínica - IX Congreso Argentino de Anrología (2023)",
+    description:
+      "Estudio de corte transversal: evaluación de parámetros del metabolismo fosfocálcico, testosterona y densidad mineral ósea en hombres con enfermedad pulmonar obstructiva crónica estable.",
+    width: "65%",
   },
   {
     id: 2,
-    logo: "logoipsum-331.svg",
-    title: "Ut enim ad minima veniam",
-    description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil",
+    logo: "logoSlams.png",
+    title:
+      "Mejor Trabajo de Investigación - XIII Congreso de la Sociedad Latinoamericana de Medicina Sexual (2015)",
+    description:
+      "Variaciones estacionales de esteroides sexuales en poblacióno masculina joven y su relación con niveles plasmáticos de Vitamina D.",
+    width: "100%",
   },
   {
     id: 3,
-    logo: "logoipsum-332.svg",
-    title: "At vero eos et accusamus et iusto odio",
+    logo: "logoSlams.png",
+    title:
+      "Mejor Trabajo de Investigación - XII Congreso de la Sociedad Latinoamericana de Medicina Sexual (2013)",
     description:
-      "ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "Hypothalamic pituitary gonadal axis function in men with type 2 diabeter mellitus.",
+    width: "100%",
   },
   {
     id: 4,
-    logo: "logoipsum-329.svg",
-    title: "Ut enim ad minima veniam",
-    description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil",
+    logo: "logoCodhy.png",
+    title:
+      "Best Abstracts Award - The Latin American Congress On Controversies To Consensus In Diabetes, Obesity And Hypertension (2010)",
+    description:
+      "Evaluación de los niveles de testosterona total y biodisponible en pacientes con diabetes tipo 2.",
+    width: "100%",
   },
 ];
 

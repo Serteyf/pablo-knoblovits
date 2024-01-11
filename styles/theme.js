@@ -1,11 +1,13 @@
 import { extendTheme, theme as chakraTheme, theme } from "@chakra-ui/react";
 import "@fontsource/whisper";
 import "@fontsource/raleway";
-import "@fontsource/roboto";
+import "@fontsource/roboto/300.css";
+// import "@fontsource-variable/montserrat/wght-italic.css";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import LinkTheme from "./components/Link";
 import HeadingTheme from "./components/Heading";
 import FormLabelTheme from "./components/FormLabel";
+import ButtonTheme from "./components/Button";
 // import ButtonTheme from "@theme/components/ButtonTheme";
 
 function goldenRatio() {
@@ -47,9 +49,9 @@ const customTheme = extendTheme({
   fonts: {
     body: `Raleway, ${chakraTheme.fonts?.body}`,
     heading: `Raleway, ${chakraTheme.fonts?.body}`,
+    subHeading: `Montserrat, ${chakraTheme.fonts?.heading}`,
     number: `Roboto, ${chakraTheme.fonts?.body}`,
     logo: `"Whisper", sans-serif`,
-    // heading: `Montserrat, ${chakraTheme.fonts?.heading}`,
   },
 
   colors: {
@@ -93,6 +95,12 @@ const customTheme = extendTheme({
   components: {
     Link: LinkTheme,
     Heading: HeadingTheme,
+    Button: {
+      // 1. We can update the base styles
+      baseStyle: {
+        color: "white",
+      },
+    },
   },
 });
 
