@@ -78,7 +78,7 @@ export default function Header() {
             >
               Biografía
             </Button>
-            <Button
+            {/* <Button
               as={"a"}
               display={{ base: "none", md: "inline-flex" }}
               color="brand.blue.base"
@@ -86,12 +86,12 @@ export default function Header() {
               bg="none"
             >
               Material
-            </Button>
+            </Button> */}
             <Button
               as={"a"}
               display={{ base: "none", md: "inline-flex" }}
               color="brand.blue.base"
-              href={"#"}
+              href={"#name"}
               bg="none"
               border="3px #2D3791 solid"
               padding="1.5rem 1.5rem"

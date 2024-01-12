@@ -9,6 +9,14 @@ import HeadingTheme from "./components/Heading";
 import FormLabelTheme from "./components/FormLabel";
 import ButtonTheme from "./components/Button";
 // import ButtonTheme from "@theme/components/ButtonTheme";
+const variantFilled = () => ({
+  field: {
+    _focus: {
+      borderColor: "var(--chakra-ui-focus-ring-color)",
+      boxShadow: "0 0 0 1px var(--chakra-ui-focus-ring-color)",
+    },
+  },
+});
 
 function goldenRatio() {
   return {
@@ -35,8 +43,12 @@ const customTheme = extendTheme({
         maxWidth: "100%",
       },
       main: { flex: "1 0 auto" },
+      ":host,:root": {
+        "--chakra-ui-focus-ring-color": "#414FD0",
+      },
     },
   },
+  shadows: { outline: "0 0 0 3px var(--chakra-ui-focus-ring-color)" },
 
   // const breakpoints = [a, b, c, d]
   // breakpoints[0] = 0 - 640px(sm)
@@ -98,12 +110,8 @@ const customTheme = extendTheme({
   components: {
     Link: LinkTheme,
     Heading: HeadingTheme,
-    Button: {
-      // 1. We can update the base styles
-      baseStyle: {
-        color: "white",
-      },
-    },
+    Button: ButtonTheme,
+    Input: {},
     Form: {
       variants: {
         floating: {
@@ -111,6 +119,14 @@ const customTheme = extendTheme({
             _focusWithin: {
               label: {
                 ...activeLabelStyles,
+              },
+            },
+            _focus: {
+              input: {
+                borderColor: "bg.blue",
+              },
+              textarea: {
+                borderColor: "bg.blue",
               },
             },
             "input:not(:placeholder-shown) + label, .chakra-select__wrapper + label, textarea:not(:placeholder-shown) ~ label":
@@ -133,6 +149,7 @@ const customTheme = extendTheme({
             input: {
               borderColor: "#000",
               fontSize: "sm",
+              variants: variantFilled,
             },
           },
         },

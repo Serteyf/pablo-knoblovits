@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
@@ -18,7 +20,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function AwardsCarousel() {
+export default function ImagesCarousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);

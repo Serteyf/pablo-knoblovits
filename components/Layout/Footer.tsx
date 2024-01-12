@@ -34,6 +34,7 @@ export default function Footer() {
               color="brand.blue.base"
               fontWeight="bold"
               textAlign="center"
+              _hover={{ textDecoration: "none" }}
             >
               P.K.
             </Text>

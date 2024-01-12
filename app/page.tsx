@@ -7,8 +7,10 @@ import AboutMe from "@/components/AboutMe";
 import ContactBlock from "@/components/Contact/ContactBlock";
 import ImagesCarousel from "@/components/ImagesCarousel";
 import FieldOfWork from "@/components/FieldOfWork";
+import CarouselBlock from "@/components/Carousel/Carousel";
 
 const Index: NextPage = () => {
+  const test = [1, 2, 3, 4];
   return (
     <Layout pageTitle={"Home"}>
       <HeroBanner />
@@ -16,8 +18,8 @@ const Index: NextPage = () => {
       <AboutMe />
       <FieldOfWork />
       <Awards />
+      <CarouselBlock gap={50}>{test}</CarouselBlock>
       <ContactForm />
-      {/* <ImagesCarousel /> */}
     </Layout>
   );
 };

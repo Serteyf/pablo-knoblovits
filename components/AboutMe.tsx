@@ -62,16 +62,7 @@ export default function AboutMe() {
         /> */}
       </HStack>
       <Flex w="100%" justifyContent="center" m="0 auto">
-        <Button
-          p="1.5rem"
-          fontSize="md"
-          fontWeight="normal"
-          borderRadius="10px 10px 10px 10px"
-          color="white"
-          bgColor="bg.blue"
-          border="3px #414FD0 solid"
-          _hover={{ bgColor: "bg.white", color: "bg.blue", fontWeight: "bold" }}
-        >
+        <Button alignSelf="end" variant="blue">
           Biografía y trayectoria
         </Button>
       </Flex>
