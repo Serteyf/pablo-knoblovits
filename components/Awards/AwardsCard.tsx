@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function AwardsCard(props: any) {
+  const { heading, subHeading, logo, description, width } = props.award;
   return (
     <VStack
       spacing="5"
@@ -48,7 +49,7 @@ export default function AwardsCard(props: any) {
         transition="0.3s"
         bgColor="rgba(255, 255, 255, 0.5)"
         _hover={{ boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)", bgColor: "brand.white" }}
-        padding="2rem"
+        padding="1rem"
         m="0 -1rem"
       >
         <Box>
@@ -63,7 +64,7 @@ export default function AwardsCard(props: any) {
               justifyContent="center"
             >
               {props.award.heading}
-            </Heading>{" "}
+            </Heading>
             -
             <Heading as="h3" fontSize="sm" fontStyle="italic">
               {props.award.subHeading}

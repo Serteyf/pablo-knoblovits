@@ -34,6 +34,11 @@ const activeLabelStyles = {
 const customTheme = extendTheme({
   styles: {
     global: {
+      "*": {
+        focus: {
+          outlineColor: "#414FD0!important",
+        },
+      },
       html: { fontSize: "18px", fontFamily: `Raleway, ${chakraTheme.fonts?.body}` },
       body: {
         minHeight: "100vh",
@@ -41,6 +46,9 @@ const customTheme = extendTheme({
         color: "black",
         margin: "auto!important",
         maxWidth: "100%",
+        ":host,:root": {
+          "--chakra-ui-focus-ring-color": "#414FD0",
+        },
       },
       main: { flex: "1 0 auto" },
       ":host,:root": {
@@ -48,7 +56,7 @@ const customTheme = extendTheme({
       },
     },
   },
-  shadows: { outline: "0 0 0 3px var(--chakra-ui-focus-ring-color)" },
+  shadows: { outline: "0 0 0 3px #414FD0" },
 
   // const breakpoints = [a, b, c, d]
   // breakpoints[0] = 0 - 640px(sm)
@@ -56,12 +64,12 @@ const customTheme = extendTheme({
   // breakpoints[2] = 768px - 1024px(lg)
 
   breakpoints: {
-    base: "0em", // 0px
-    sm: "30em", // ~480px. em is a relative unit and is dependant on the font-size.
-    md: "48em", // ~768px
+    base: "0px",
+    sm: "863px",
+    md: "1440px",
     lg: "62em", // ~992px
     xl: "80em", // ~1280px
-    "2xl": "96em", // ~1536px
+    "2xl": "1536px", // ~1536px
   },
   fonts: {
     body: `Raleway, ${chakraTheme.fonts?.body}`,
@@ -117,9 +125,9 @@ const customTheme = extendTheme({
         floating: {
           container: {
             _focusWithin: {
-              label: {
-                ...activeLabelStyles,
-              },
+              // label: {
+              //   ...activeLabelStyles,
+              // },
             },
             _focus: {
               input: {
@@ -129,27 +137,31 @@ const customTheme = extendTheme({
                 borderColor: "bg.blue",
               },
             },
-            "input:not(:placeholder-shown) + label, .chakra-select__wrapper + label, textarea:not(:placeholder-shown) ~ label":
-              {
-                ...activeLabelStyles,
-              },
-            label: {
-              top: 0,
-              left: 0,
-              zIndex: 2,
-              position: "absolute",
-              backgroundColor: "white",
-              pointerEvents: "none",
-              mx: 3,
-              px: 1,
-              my: 2,
-              transformOrigin: "left top",
-              fontSize: "sm",
-            },
+            // "input:not(:placeholder-shown) + label, .chakra-select__wrapper + label, textarea:not(:placeholder-shown) ~ label":
+            //   {
+            //     ...activeLabelStyles,
+            //   },
+            // label: {
+            //   top: 0,
+            //   left: 0,
+            //   zIndex: 2,
+            //   position: "absolute",
+            //   backgroundColor: "white",
+            //   pointerEvents: "none",
+            //   mx: 3,
+            //   px: 1,
+            //   my: 2,
+            //   transformOrigin: "left top",
+            //   fontSize: "sm",
+            // },
             input: {
               borderColor: "#000",
               fontSize: "sm",
               variants: variantFilled,
+            },
+            label: {
+              fontSize: "sm",
+              mb: "0",
             },
           },
         },

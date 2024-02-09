@@ -72,7 +72,8 @@ export default function ImagesCarousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={"6xl"}
+            height="10px!important"
+            // height={"6xl"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

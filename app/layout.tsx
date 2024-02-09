@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import Header from "@/components/Layout/Header";
 import HeroBanner from "@/components/HeroBanner";
 import { useTheme } from "@chakra-ui/react";
+import { Metadata } from "next";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const theme = useTheme();

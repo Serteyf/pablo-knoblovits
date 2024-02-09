@@ -24,7 +24,13 @@ export default function ContactBlock() {
       w="100%"
       boxShadow={"inset 0px -0.5rem 1rem 0px rgba(0, 0, 0, 0.14)"}
     >
-      <HStack justifyContent={"space-around"} w="80%" m="0 auto" p="1.5rem 0">
+      <HStack
+        justifyContent={"space-around"}
+        flexDirection={{ base: "column", sm: "row" }}
+        w="80%"
+        m="0 auto"
+        p="1.5rem 0"
+      >
         <Flex>
           <PhoneIcon fontSize="md" mr="1rem" alignSelf={"center"} />
           <Link fontSize="md" href="tel:+5491125568102">

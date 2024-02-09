@@ -8,19 +8,19 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 interface Layout {
-  pageTitle: string;
+  pageTitle?: string;
   children: any;
 }
 
 const Layout = ({ pageTitle, children }: Layout): JSX.Element => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{pageTitle}</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-      </Head>
+      </Head> */}
       <Flex direction={"column"} minH="100vh">
         <Header />
         <main>{children}</main>

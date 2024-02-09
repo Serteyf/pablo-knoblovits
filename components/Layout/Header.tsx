@@ -18,8 +18,10 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
+import useMediaQuery from "../utils/useMediaQuery";
 
 export default function Header() {
+  const isMobile = useMediaQuery(863);
   const { isOpen, onToggle } = useDisclosure();
   const theme = useTheme();
 
@@ -38,7 +40,7 @@ export default function Header() {
         maxW="80%"
         margin="0 auto"
       >
-        <Flex
+        {/* <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
@@ -49,10 +51,13 @@ export default function Header() {
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
           />
-        </Flex>
+        </Flex> */}
         <Flex flex={1} justify={{ base: "center", md: "space-between" }}>
           <Box>
             <Text
+              id="pk"
+              as="a"
+              href="/"
               fontSize="3rem"
               fontFamily={theme.fonts.logo}
               color="brand.blue.base"
@@ -69,7 +74,7 @@ export default function Header() {
             direction={"row"}
             spacing={6}
           >
-            <Button
+            {/* <Button
               as={"a"}
               display={{ base: "none", md: "inline-flex" }}
               color="brand.blue.base"
@@ -77,7 +82,7 @@ export default function Header() {
               bg="none"
             >
               Biografía
-            </Button>
+            </Button> */}
             {/* <Button
               as={"a"}
               display={{ base: "none", md: "inline-flex" }}
@@ -87,28 +92,40 @@ export default function Header() {
             >
               Material
             </Button> */}
-            <Button
-              as={"a"}
-              display={{ base: "none", md: "inline-flex" }}
-              color="brand.blue.base"
-              href={"#name"}
-              bg="none"
-              border="3px #2D3791 solid"
-              padding="1.5rem 1.5rem"
-              _hover={{ bg: "bg.blue" }}
-              className="button"
-              fontWeight="normal"
-            >
+            {!isMobile ? (
               <Box
-                sx={{
-                  ".button:hover &": {
-                    color: "text.white",
-                  },
-                }}
+                as="a"
+                href={"#name"}
+                backgroundImage="/contacticon.svg"
+                backgroundRepeat="no-repeat"
+                backgroundSize="contain"
+                width="45px"
+                height="45px"
+              />
+            ) : (
+              <Button
+                as={"a"}
+                display={{ base: "none", sm: "inline-flex" }}
+                color="brand.blue.base"
+                href={"#name"}
+                bg="none"
+                border="3px #2D3791 solid"
+                padding="1.5rem 1.5rem"
+                _hover={{ bg: "brand.blue.base" }}
+                className="button"
+                fontWeight="normal"
               >
-                Contacto
-              </Box>
-            </Button>
+                <Box
+                  sx={{
+                    ".button:hover &": {
+                      color: "text.white",
+                    },
+                  }}
+                >
+                  Contacto
+                </Box>
+              </Button>
+            )}
           </Stack>
         </Flex>
       </Flex>

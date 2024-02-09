@@ -23,7 +23,7 @@ export default function AboutMe() {
       backgroundColor="bg.white"
       // w="100%"
       boxShadow={"inset 0px -0.5rem 1rem 0px rgba(0, 0, 0, 0.14)"}
-      p="4rem "
+      p={{ base: "4rem 0rem", sm: "4rem" }}
     >
       <HStack maxW="75%" margin="0 auto">
         <Container
@@ -33,7 +33,7 @@ export default function AboutMe() {
           p="1rem 0 3.5rem 0"
           alignItems="start"
         >
-          <VStack maxW="75%" gap="1rem" alignItems="start">
+          <VStack maxW={{ base: "100%", md: "75%" }} gap="1rem" alignItems="center" margin="0 auto">
             {ABOUTME.map((data) => {
               return <TextBlock key={data.id} data={data} />;
             })}
@@ -61,11 +61,11 @@ export default function AboutMe() {
           paddingInlineStart="0"
         /> */}
       </HStack>
-      <Flex w="100%" justifyContent="center" m="0 auto">
+      {/* <Flex w="100%" justifyContent="center" m="0 auto">
         <Button alignSelf="end" variant="blue">
           Biografía y trayectoria
         </Button>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 }
